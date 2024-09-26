@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id ="form1" runat="server">
+        <div>
+            First name: <input type="text"> <asp:TextBox ID="Textbox" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+            ControlToValidate="TextBox1" ErrorMessage= "please enter the name"
+            ForeColor="Red"></asp:RequiredFieldValidator>
+            <br/>
+            Emailid:- <input type="text"> <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:RequiredFeildValidation ID="RequiredFeildValidation2" runat="server"
+            ControlToValidate="TextBox2" ErrorMessage="Enter The Email" 
+            ForeColor="Blue"></asp:RequiredFieldValidator>
+            <br />
+ <asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
+ </div>
+ <asp:Button ID="Button1" runat="server" Text="Submit " />
+ </form>
+</body>
+</html
+ 
